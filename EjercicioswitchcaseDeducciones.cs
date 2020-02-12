@@ -24,13 +24,13 @@ namespace EjercicioswitchcaseDeducciones
 
             double basedecotizacion = (salariomensual * 0.40);
 
-            if (basedecotizacion < smmlv) basedecotizacion = smmlv;
+            if (basedecotizacion < smmlv) basedecotizacion = smmlv; //Solo se puede utilizar if acá
 
             double pension = 0, eps = 0, arl = 0;
 
-            switch (tdc){
+            switch (tdc){ //tipo de contrato
 
-                case 1:
+                case 1: //Dependiente
 
                     eps = 0.04 * basedecotizacion;
                     pension = 0.04 * basedecotizacion;
@@ -44,7 +44,7 @@ namespace EjercicioswitchcaseDeducciones
 
                     break;
 
-                case 2:
+                case 2: //Independiente
 
                     eps = 0.125 * basedecotizacion;
                     pension = 0.16 * basedecotizacion;
@@ -52,7 +52,7 @@ namespace EjercicioswitchcaseDeducciones
                     Console.WriteLine("Seleccione el tipo de riesgo (1-5):");
                     double riesgo = double.Parse(Console.ReadLine());
 
-                    switch (riesgo){
+                    switch (riesgo){ //Tipo de riesgo
 
                         case 1: arl = 0.522 / 100;
                         break;
