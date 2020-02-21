@@ -42,13 +42,22 @@ namespace BlackJackejercicioparaentregar
                 Console.WriteLine("Total: " + total); //Salida total
 
                 //Si el nuevo total sigue siendo menos o igual que 21
-                if (mascarta =="S" && total <= 21 ){
+                if (mascarta =="s" && total <= 21 ){
 
                     Console.WriteLine("Nueva carta: " + ncarta); //Salida nueva carta
                     Console.WriteLine("Total: " + total); //Salida total
                     Console.Write("¿Desea una nueva carta? (s/n): ");
                     respuesta = Console.ReadLine();
                 }
+                
+                 //Condición de ganar
+
+                 if (total == 21){
+                     Console.WriteLine("Total: " + total); //Salida total
+                     Console.WriteLine("\nGANASTE");
+                     mascarta = "n";
+                 }
+               
                 if (total > 21) {
                     Console.WriteLine("Fin del juego");
                     mascarta = "n";
