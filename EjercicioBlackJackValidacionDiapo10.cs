@@ -18,12 +18,14 @@ namespace EjercicioCasaDiapo10
             int carta2 = 0;
             string mascarta = "";
 
-
+            //Inicio programa
             Console.WriteLine("¡¡¡¡¡¡¡¡¡¡¡¡¡¡Incio!!!!!!!!!!!!!");
 
 
             Console.WriteLine("Desea seguir(s/n): ");
             string respuesta = Console.ReadLine();
+            
+            //Validación respuesta s y n
 
             while (respuesta != "s" && respuesta != "n") {
                 Console.WriteLine("\nError. Respuesta incorrecta. Solo permitido s/n");
@@ -39,12 +41,13 @@ namespace EjercicioCasaDiapo10
             }
 
             while (respuesta =="s" && mascarta != "s" && mascarta != "n"){
-                 
-                //Validación de cantidad de jugadores.
+                
                 Console.WriteLine("\nIngrese el número de jugadores (mínimo 2 jugadores y máximo 5)");
                 int n = int.Parse(Console.ReadLine());
+                
+                //Validación de cantidad de jugadores.
 
-                while (n < 2 || n > 5) {//Si es menor que 2 y mayor que 5
+                while (n < 2 || n > 5) {//Si es menor que 2 o mayor que 5
 
                     Console.WriteLine("\nError. Respuesta incorrecta.Solo permitido número de jugadores entre 2 y 5");
                     Console.WriteLine("------------Por favor ingrese nuevamente los datos---------");
@@ -60,7 +63,7 @@ namespace EjercicioCasaDiapo10
                     carta1 = aleatorio.Next(1, 11);
                     carta2 = aleatorio.Next(1, 11);
 
-                    //Valores cartas (salida)
+                    //Valores primeras cartas (salida)
                     Console.WriteLine("\nSu primera carta fue: " + carta1);
                     Console.WriteLine("Su segunda carta fue: " + carta2);
 
