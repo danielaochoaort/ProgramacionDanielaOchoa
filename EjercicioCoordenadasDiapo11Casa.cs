@@ -15,6 +15,9 @@ namespace EjercicioCoordenadasDiapo11Casa
             //posición        0, 1, 2, 3
             int[] coordsX = { 0, 2, 3, 7 };
             int[] coordsY = { 0, 1, 5, 6 };
+            
+            //double [] pendiente = new double [3];
+            //double [] intercepto =new double [3]; 
 
             double mayor = 0;
 
