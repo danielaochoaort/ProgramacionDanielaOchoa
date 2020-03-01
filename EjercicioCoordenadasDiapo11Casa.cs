@@ -15,10 +15,7 @@ namespace EjercicioCoordenadasDiapo11Casa
             //posición        0, 1, 2, 3
             int[] coordsX = { 0, 2, 3, 7 };
             int[] coordsY = { 0, 1, 5, 6 };
-            
-            //double [] pendiente = new double [3];
-            //double [] intercepto =new double [3]; 
-
+           
             double mayor = 0;
 
             //Cálculo de pendientes (y-y1/x-x1)
@@ -31,23 +28,22 @@ namespace EjercicioCoordenadasDiapo11Casa
             double pendiente2 = ((coordsY[3] - coordsY[2]) / (coordsX[3] - coordsX[2]));
 
 
-            //Cálculo intersecto
+            //Cálculo intercepto
 
 
-            double intersecto = (coordsY[1] - (pendiente * coordsX[1]));
-            double intersecto1 = (coordsY[2] - (pendiente1 * coordsX[2]));
-            double intersecto2 = (coordsY[3] - (pendiente2 * coordsX[3]));
+            double intercepto = (coordsY[1] - (pendiente * coordsX[1]));
+            double intercepto1 = (coordsY[2] - (pendiente1 * coordsX[2]));
+            double intercepto2 = (coordsY[3] - (pendiente2 * coordsX[3]));
 
 
             //Condiciones 
-            if ((intersecto == intersecto1 && pendiente == pendiente1) && (intersecto1 == intersecto2 && pendiente1 == pendiente2)){
+            if ((intercepto == intercepto1 && pendiente == pendiente1) && (intercepto1 == intercepto2 && pendiente1 == pendiente2)){
 
                 Console.WriteLine("Si pertenecen a la misma recta");
             }
             else{
                 Console.WriteLine("No pertenencen a la misma recta");
             }
-
 
             //Cálculo distancias
             double distancia = Math.Sqrt((coordsX[1] - coordsX[0]) * (coordsX[1] - coordsX[0]) + (coordsY[1] - coordsY[0]) * (coordsY[1] - coordsY[0]));
