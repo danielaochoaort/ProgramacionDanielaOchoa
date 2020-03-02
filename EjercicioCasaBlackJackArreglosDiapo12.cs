@@ -13,7 +13,6 @@ namespace EjercicioBlackJackArreglosDiapo12Casa
             Random aleatorio = new Random();
 
             //Variables
-            int jugador = 0;
             string mascarta = "";
 
             //Inicio programa
